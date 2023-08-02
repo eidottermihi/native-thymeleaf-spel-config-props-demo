@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+</style>
+
+<head>
+	<title>native-thymeleaf-spel-config-props-demo</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+	<p>Apps: </p>
+	<ul>
+		<li th:each="app: ${apps}" th:id="'item-' + ${app.key}">
+			<span th:text="${app.value.displayName}"></span>
+		</li>
+	</ul>
+</body>
+
+</html>

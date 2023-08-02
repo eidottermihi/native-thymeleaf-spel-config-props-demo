@@ -1,0 +1,6 @@
+props:
+  apps:
+    app1:
+      display-name: App 1
+    app2:
+      display-name: App 2
